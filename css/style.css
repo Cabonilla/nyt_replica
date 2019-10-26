@@ -1,0 +1,341 @@
+body {
+    font-family: 'Domine', serif;
+    font-size: 11px;
+}
+
+h2 {
+    margin: 3vh;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.flex-nav ul {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+    flex-basis: auto;
+    border-bottom: 1px solid rgb(0,0,0,0.2);
+    list-style: none;
+}
+
+.flex-nav li {
+    flex: 6;
+}
+
+.flex-nav .nav-icon {
+    flex: 1;
+}
+
+.flex-nav .nav-type {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.nyt-logo {
+    height: 70%;
+    width: auto;
+}
+
+#login {
+    float: right;
+    border-bottom: 1px solid black;
+}
+
+.header {
+    font-size: 3em;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.landing-image {
+    max-width: 70vw;
+    height: auto;
+}
+
+ul, figure {
+    margin: 0;
+}
+
+figcaption {
+    font-size: 0.4em;
+    width: 70vw;
+    color: rgb(0,0,0,0.5);
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+figcaption .credit {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.article {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    
+}
+
+.top-article, .bottom-article {
+    grid-column: 8 / 14;
+}
+
+.bottom-article {
+    margin-top: 1.5em;
+}
+
+.date {
+    font-size: 0.9em;
+    color: rgb(0,0,0,0.4);
+}
+
+.main-author {
+    font-weight: 700;
+    font-size: 1em;
+    margin: 2.5vh 0;
+}
+
+.time-and-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-and-social-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.time-and-social-footer p{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.time-and-social .social-drawer i {
+    margin: 0px 0.5em;
+}
+
+.time-and-social-footer .social-drawer i {
+    margin: 0px 0.5em;
+}
+
+.main-article {
+    font-size: 1.1rem;
+    line-height: 1.875rem;
+}
+
+.theory-grid {
+    background-image: url("https://static01.nyt.com/newsgraphics/2014/03/18/theory-of-inflation/1ebaa1b972edda0f407fbaa0e010f6b50fb6792e/inflation-945.png");
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: 100%;
+    grid-column: 6 / 16;
+}
+
+.theory-grid .theory-grid-text {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+}
+
+.theory-grid .theory-grid-text .theory-caption {
+    padding-top: 11em;
+    font-size: 1.1em;
+    font-family: 'Libre Franklin', sans-serif;
+    letter-spacing: 0.05em;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 1440px) {
+    .theory-grid .theory-grid-text .theory-caption {
+        font-size: 0.85em;
+    }
+}
+
+.theory-grid-heading {
+    grid-column: 6 / 16;
+}
+
+.theory-grid-heading h2, .theory-grid-heading p {
+    margin-bottom: 1em;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.theory-grid-heading h2 {
+    font-size: 2em;
+    margin: 1em 0 0.3em 0;
+    font-weight: 700;
+}
+
+.theory-grid-heading p {
+    font-size: 1.25em;
+    margin: 0 0 1em 0;
+}
+
+/* @media (min-width:1450px) {
+    .theory-grid .theory-grid-text .theory-caption {
+        font-size: 9px;
+    }
+} */
+
+.theory-graphic {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#clip-caption {
+    color: rgb(0,0,0,0.4);
+    margin: 0.1em 0 0.1em 0;
+    font-size: 1.1em;
+    line-height: 1rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.image-insert {
+    height: auto;
+    width: 100%;
+}
+
+.section-6 {
+    grid-column: 4 / 17; 
+    display: flex;
+}
+
+.section-6 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.section-6 ul li {
+    font-size: 1.5em;
+    margin-top: 1em;
+    /* border-bottom: 1px solid rgb(0,0,0,0.2); */
+    border-top: 1px solid rgb(0,0,0,0.2);
+    padding: 1em 0 0em 0;
+}
+
+.section-6 .article-previews {
+    flex: 3;
+    border-top: 1px solid rgb(0,0,0,0.5);
+    margin: 2em 3em 0 0;
+}
+
+.section-6 .article-popular {
+    flex: 1;
+    border-top: 1px solid rgb(0,0,0,0.5);
+    margin: 2em 0 0 0;
+}
+
+.footer-header {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.previews-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+}
+
+.previews-grid .editors-picks {
+    margin-top: 1em;
+    padding-top: 3em;
+    border-top: 1px solid rgb(0,0,0,0.5);
+}
+
+.preview-image {
+    width: 100%;
+    height: auto;
+}
+
+.previews-grid .preview h2 {
+    margin: 0.5em 0;
+}
+
+.editors-picks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+    /* margin-top: 4em; */
+    /* padding-top: 5em; */
+}
+
+.editor-section .footer-header {
+    padding-top: 1em;
+    border-top: 1px solid rgb(0,0,0,0.5);
+width: 100%;
+}
+
+.editor-section h2 {
+    margin: 0.5em 0;
+}
+
+.editor-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.footer {
+    grid-column: 4 / 17;
+    border-top: 1px solid rgb(0,0,0,0.5);
+    margin-top: 2em; 
+}
+
+.footer img {
+    margin: 2em 0 2em 0;
+}
+
+.footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .categories {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.categories ul li {
+    margin: 1em 0 0 0;
+    list-style: none;
+    font-size: 0.8rem;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.categories ul .category-title {
+    font-weight: bold;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.categories ul .subscription-category {
+    font-weight: bold;
+}
+
+.final-footer .credits {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin-top: 2em;
+    padding: 1em;
+    color: rgb(0,0,0,0.2);
+    border-top: 1px solid rgb(0,0,0,0.2);
+}
+
+.final-footer .credits li {
+    margin: 0 1em 0 1em;
+}
